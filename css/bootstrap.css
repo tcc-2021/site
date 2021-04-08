@@ -713,7 +713,7 @@ pre code {
     width: 100%;
     min-height: 1px;
     padding-right: 15px;
-    padding-left: 15px
+    padding-left: 10px;
 }
 
 .col {
@@ -721,7 +721,7 @@ pre code {
     flex-basis: 0;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    max-width: 100%
+    max-width: 100%;
 }
 
 .col-auto {
@@ -758,7 +758,7 @@ pre code {
 .col-5 {
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
-    max-width: 41.666667%
+    max-width: 41.666667%;
 }
 
 .col-6 {
@@ -1410,7 +1410,7 @@ pre code {
         margin-left: 16.666667%
     }
     .offset-lg-3 {
-        margin-left: 25%
+        margin-left: 33%
     }
     .offset-lg-4 {
         margin-left: 33.333333%
