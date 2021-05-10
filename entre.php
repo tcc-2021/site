@@ -1,6 +1,8 @@
+<?php
+session_start()
+?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
-
 <head>
   <!-- Mobile Specific Meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -31,6 +33,12 @@
   <link rel="stylesheet" href="css/hexagons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <script type="text/javascript">
+    function alerta()
+    {
+      alert("Usuário ou Senha invalidos");
+    }  
+  </script>
 </head>
 
 <body>
@@ -48,9 +56,9 @@
 
         <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
           <ul class="navbar-nav">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="about.html">Sobre Nós</a></li>
-            <li><a href="cadastro.html">Cadastre-se</a></li>
+            <li><a href="cadastro.php">Cadastre-se</a></li>
             <!-- Dropdown -->
             <!-- <li class="dropdown">
               <a class="dropdown-toggle" href="#" data-toggle="dropdown">
@@ -70,7 +78,7 @@
                 <a class="dropdown-item" href="blog-single.html">Blog Details</a>
               </div>
             </li> -->
-            <li><a href="entre.html">Entre</a></li>
+            <li><a href="entre.php">Entre</a></li>
             <li><a href="cadastro.html">Download</a></li>
             <!-- <li>
               <button class="search">
@@ -108,7 +116,7 @@
               <span class="box">
                 <a href="index.html">Home </a>
                 <i class="lnr lnr-arrow-right"></i>
-                <a href="entre.html">Entre</a>
+                <a href="entre.php">Entre</a>
               </span>
             </div>
           </div>
@@ -320,6 +328,16 @@
   <!-- ================ End Popular Course Area ================= -->
 
   <!-- ================ Start Registration Area ================= -->
+<?php
+if(isset($_SESSION['nao_autenticado']))
+  {
+    echo '<script type="text/javascript">',
+          'alerta();',
+          '</script>'
+          ;
+  }
+unset($_SESSION['nao_autenticado']);
+?>
   <section class="registration-area">
     <div class="container">
       <div class="row align-items-end">
@@ -339,7 +357,7 @@
           <div class="course-form-section">
             <h3 class="text-white">Entre</h3>
             <p class="text-white">Insira seu login e senha cadastrados para ter acesso a plataforma</p>
-            <form class="course-form-area contact-page-form course-form text-right" id="myForm" action="mail.html" method="post">
+            <form class="course-form-area contact-page-form course-form text-right" id="myForm" action="php/login.php" method="post">
               <!-- <div class="form-group col-md-12">
                 <input type="text" class="form-control" id="name" name="name" placeholder="Nome" onfocus="this.placeholder = ''"
                  onblur="this.placeholder = 'Nome'">
@@ -352,6 +370,7 @@
                 <input type="password" class="form-control" id="senha" name="senha" placeholder="senha" onfocus="this.placeholder = ''"
                  onblur="this.placeholder = 'senha'">
               </div>
+              <a>Não tem uma conta ainda? cadastre-se clicando </a><a href="cadastro.php">aqui</a>
               <div class="col-lg-12 text-center">
                 <button class="btn text-uppercase">Entrar</button>
               </div>
@@ -558,6 +577,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <script src="js/waypoints.min.js"></script>
   <script src="js/jquery.nice-select.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/AlertaUsuarioErrado"></script>
 </body>
 
 </html>

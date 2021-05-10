@@ -1,3 +1,6 @@
+<?php
+session_start()
+?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
@@ -15,7 +18,7 @@
   <!-- meta character set -->
   <meta charset="UTF-8" />
   <!-- Site Title -->
-  <title>Studiis</title>
+  <title>Cadastre-se</title>
 
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto:400,400i,500,700" rel="stylesheet" />
   <!--
@@ -31,6 +34,16 @@
   <link rel="stylesheet" href="css/hexagons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <script type="text/javascript">
+    function CadastroEfetuado(){
+      alert("Cadastro efetuado!");
+    }
+  </script>
+  <script type="text/javascript">
+    function CadastroExiste(){
+      alert("O email informado já está cadastrado!, informe outro e tente novamente");
+    }
+  </script>
 </head>
 
 <body>
@@ -48,9 +61,9 @@
 
         <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
           <ul class="navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Sobre nós</a></li>
-            <li><a href="cadastro.html">cadastre-se</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.html">Sobre Nós</a></li>
+            <li><a href="cadastro.php">Cadastre-se</a></li>
             <!-- Dropdown -->
             <!-- <li class="dropdown">
               <a class="dropdown-toggle" href="#" data-toggle="dropdown">
@@ -70,12 +83,13 @@
                 <a class="dropdown-item" href="blog-single.html">Blog Details</a>
               </div>
             </li> -->
-            <li><a href="entre.html">Entre</a></li>
+            <li><a href="entre.php">Entre</a></li>
             <li><a href="cadastro.html">Download</a></li>
-              <!-- <button class="search">
+            <!-- <li>
+              <button class="search">
                 <span class="lnr lnr-magnifier" id="search"></span>
-              </button> -->
-            <!-- </li>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -93,38 +107,40 @@
   <!-- ================ End Header Area ================= -->
 
   <!-- ================ start banner Area ================= -->
-  <section class="home-banner-area">
-    <div class="container">
-      <div class="row justify-content-center fullscreen align-items-center">
-        <div class="col-lg-5 col-md-8 home-banner-left">
-          <h1 class="text-white">
-            Studiis, uma plataforma de estudos <br />
-            feita pra você
-          </h1>
-          <p class="mx-auto text-white  mt-20 mb-40">
-            Venha estudar para o ENEM com a Studiis! Aqui você encontra simulados personalizados
-            e conteúdos diversos para que você obtenha o melhor desempenho.
-          </p>
-        </div>
-        <div class="offset-lg-2 col-lg-5 col-md-12 home-banner-right">
-          <img class="img-fluid" src="img/header-img.png" alt="" />
+  <section class="banner-area">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-12 banner-right">
+            <h1 class="text-white">
+              Cadastre-se
+            </h1>
+            <p class="mx-auto text-white  mt-20 mb-40">
+              Junte-se a nós e desfrute do nosso conteúdo
+            </p>
+            <div class="link-nav">
+              <span class="box">
+                <a href="index.html">Home</a>
+                <i class="lnr lnr-arrow-right"></i>
+                <a href="cadastro.php">Cadastre-se</a>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   <!-- ================ End banner Area ================= -->
 
   <!-- ================ Start Feature Area ================= -->
-  <section class="feature-area">
+  <!-- <section class="feature-area">
     <div class="container-fluid">
       <div class="feature-inner row">
         <div class="col-lg-2 col-md-6">
           <div class="feature-item d-flex">
             <i class="ti-book"></i>
             <div class="ml-20">
-              <h4>Conteúdos para o ENEM</h4>
+              <h4>New Classes</h4>
               <p>
-                Aqui você encontra um guia do que estudar e por onde estudar através de links para vídeo aulas e artigos sobre o assunto que você ncessita.
+                In the history of modern astronomy, there is probably no one greater leap forward.
               </p>
             </div>
           </div>
@@ -133,9 +149,9 @@
           <div class="feature-item d-flex">
             <i class="ti-cup"></i>
             <div class="ml-20">
-              <h4>Simulados personalizados</h4>
+              <h4>Top Courses</h4>
               <p>
-                Com a studiis você poderá fazer simulados que se moldam de acordo com a sua dificuldade.
+                In the history of modern astronomy, there is probably no one greater leap forward.
               </p>
             </div>
           </div>
@@ -144,16 +160,16 @@
           <div class="feature-item d-flex border-right-0">
             <i class="ti-desktop"></i>
             <div class="ml-20">
-              <h4>Disponíveis a qualquer hora</h4>
+              <h4>Full E-Books</h4>
               <p>
-                Com a Studiis, basta se cadastrar e aproveitar de forma gratuita!
+                In the history of modern astronomy, there is probably no one greater leap forward.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- ================ End Feature Area ================= -->
 
   <!-- ================ Start Popular Course Area ================= -->
@@ -316,358 +332,165 @@
   </section> -->
   <!-- ================ End Popular Course Area ================= -->
 
-  <!-- ================ Start Video Area ================= -->
-  <section class="video-area section-gap-bottom">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-5">
-          <div class="section-title text-white">
-            <h2 class="text-white">
-              Nosso <br>
-              Objetivo
-            </h2>
-            <p>
-              Nós da Studiis queremos possibilitar a qualquer um a oportunidade de estudar para o maior vestibular do Brasil
-              de maneira fácil, rápida e com ferramentas inovadoras.
-            </p>
-          </div>
-        </div>
-        <div class="offset-lg-1 col-md-6 video-left">
-          <div class="owl-carousel video-carousel">
-            <div class="single-video">
-              <div class="video-part">
-                <img class="img-fluid" src="img/Mulher.jpg" alt="">
-                <div class="overlay"></div>
-                <!-- <a class="popup-youtube play-btn" href="https://www.youtube.com/watch?v=VufDd-QL1c0">
-                  <img class="play-icon" src="img/play-btn.png" alt="">
-                </a> -->
-              </div>
-              <h4 class="text-white mb-20 mt-30">Reforce seus conhecimentos</h4>
-              <p class="text-white mb-20">
-                Com a Studiis você será capaz de estudar todos as áreas do conhecimento que caem na prova do ENEM de maneira simples e rápida.
-              </p>
-            </div>
-
-            <div class="single-video">
-              <div class="video-part">
-                <img class="img-fluid" src="img/geometria.jpg" alt="">
-                <div class="overlay"></div>
-                <!-- <a class="popup-youtube play-btn" href="https://www.youtube.com/watch?v=VufDd-QL1c0">
-                  <img class="play-icon" src="img/play-btn.png" alt="">
-                </a> -->
-              </div>
-              <h4 class="text-white mb-20 mt-30">Faça simulados personalizados</h4>
-              <p class="text-white mb-20">
-                Nossos simulados te ajudarão a dominar de uma vez por todas as matérias das quais você tem dificuldade,
-                selecionando um maior número de questões com ênfase naquilo que você se sente estagnado.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ================ End Video Area ================= -->
-
-  <!-- ================ Start Feature Area ================= -->
-  <!-- <section class="other-feature-area">
-    <div class="container">
-      <div class="feature-inner row">
-        <div class="col-lg-12">
-          <div class="section-title text-left">
-            <h2>
-              Features That <br />
-              Can Avail By Everyone
-            </h2>
-            <p>
-              If you are looking at blank cassettes on the web, you may be
-              very confused at the difference in price. You may see some for
-              as low as $.17 each.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="other-feature-item">
-            <i class="ti-key"></i>
-            <h4>Lifetime Access</h4>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
-                do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
-                amet consec tetur adipisicing elit, sed do eiusmod tempor
-                incididunt labore.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mt--160">
-          <div class="other-feature-item">
-            <i class="ti-files"></i>
-            <h4>Source File Included</h4>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
-                do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
-                amet consec tetur adipisicing elit, sed do eiusmod tempor
-                incididunt labore.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mt--260">
-          <div class="other-feature-item">
-            <i class="ti-medall-alt"></i>
-            <h4>Student Membership</h4>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
-                do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
-                amet consec tetur adipisicing elit, sed do eiusmod tempor
-                incididunt labore.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="other-feature-item">
-            <i class="ti-briefcase"></i>
-            <h4>35000+ Courses</h4>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
-                do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
-                amet consec tetur adipisicing elit, sed do eiusmod tempor
-                incididunt labore.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mt--160">
-          <div class="other-feature-item">
-            <i class="ti-crown"></i>
-            <h4>Expert Mentors</h4>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
-                do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
-                amet consec tetur adipisicing elit, sed do eiusmod tempor
-                incididunt labore.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mt--260">
-          <div class="other-feature-item">
-            <i class="ti-headphone-alt"></i>
-            <h4>Live Supports</h4>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
-                do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
-                amet consec tetur adipisicing elit, sed do eiusmod tempor
-                incididunt labore.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- ================ End Feature Area ================= -->
-
-  <!-- ================ Start Testimonials Area ================= -->
-  <!-- <section class="testimonials-area section-gap">
-    <div class="container">
-      <div class="testi-slider owl-carousel" data-slider-id="1">
-        <div class="row align-items-center">
-          <div class="col-lg-5">
-            <div class="item">
-              <div class="testi-item">
-                <img src="img/quote.png" alt="" />
-                <div class="mt-40 text">
-                  <p>
-                    As conscious traveling Paup ers we must always be oncerned
-                    about our dear Mother Earth. If you think about it, you
-                    travel across her face and She is the host to your
-                    journey.
-                  </p>
-                </div>
-                <h4>Fanny Spencer</h4>
-                <p>Chief Executive, Amazon</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="offset-lg-1 col-lg-6">
-            <img src="img/testimonial/t1.jpg" alt="" />
-          </div>
-        </div>
-
-        <div class="row align-items-center">
-          <div class="col-lg-5">
-            <div class="item">
-              <div class="testi-item">
-                <img src="img/quote.png" alt="" />
-                <div class="mt-40 text">
-                  <p>
-                    As conscious traveling Paup ers we must always be oncerned
-                    about our dear Mother Earth. If you think about it, you
-                    travel across her face <br />
-                    and She is the host to your journey.
-                  </p>
-                </div>
-                <h4>Fanny Spencer</h4>
-                <p>Chief Executive, Amazon</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="offset-lg-1 col-lg-6">
-            <img src="img/testimonial/t1.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- ================ End Testimonials Area ================= -->
-
   <!-- ================ Start Registration Area ================= -->
-  <!-- <section class="registration-area">
+<?php
+if(isset($_SESSION['usuario_existe']))
+  {
+    echo '<script type="text/javascript">',
+          'CadastroExiste();',
+          '</script>'
+          ;
+  }
+unset($_SESSION['usuario_existe']);
+?>
+<?php
+if(isset($_SESSION['status_cadastro']))
+  {
+    echo '<script type="text/javascript">',
+          'CadastroEfetuado();',
+          '</script>'
+          ;
+  }
+unset($_SESSION['status_cadastro']);
+?>
+
+  <section class="registration-area">
     <div class="container">
       <div class="row align-items-end">
-        <div class="col-lg-5">
-          <div class="section-title text-left text-white">
-            <h2 class="text-white">
-              Watch Our Trainers <br>
-              in Live Action
-            </h2>
-            <p>
-              If you are looking at blank cassettes on the web, you may be
-              very confused at the difference in price. You may see some for
-              as low as $.17 each.
-            </p>
-          </div>
-        </div>
         <div class="offset-lg-3 col-lg-4 col-md-6">
           <div class="course-form-section">
-            <h3 class="text-white">Courses for Free</h3>
-            <p class="text-white">It is high time for learning</p>
-            <form class="course-form-area contact-page-form course-form text-right" id="myForm" action="mail.html" method="post">
+            <h3 class="text-white">Cadastre-se</h3>
+            <p class="text-white">Você está a poucos passos de fazer parte de nosso grupo</p>
+            <form class="course-form-area contact-page-form course-form text-right" id="myForm" action="php/cadastrar.php" method="post">
               <div class="form-group col-md-12">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name" onfocus="this.placeholder = ''"
-                 onblur="this.placeholder = 'Name'">
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" onfocus="this.placeholder = ''"
+                 onblur="this.placeholder = 'Nome'">
               </div>
               <div class="form-group col-md-12">
-                <input type="text" class="form-control" id="subject" name="subject" placeholder="Phone Number" onfocus="this.placeholder = ''"
-                 onblur="this.placeholder = 'Phone Number'">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email " onfocus="this.placeholder = ''"
+                 onblur="this.placeholder = 'Email'">
               </div>
               <div class="form-group col-md-12">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''"
-                 onblur="this.placeholder = 'Email Address'">
+                <input type="password" class="form-control" id="senha" name="senha" placeholder="senha" onfocus="this.placeholder = ''"
+                 onblur="this.placeholder = 'senha'">
               </div>
+              <a>já tem uma conta? faça login clicando </a><a href="entre.php">aqui</a>
               <div class="col-lg-12 text-center">
-                <button class="btn text-uppercase">Submit</button>
+                <button class="btn text-uppercase">Enviar</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- ================ End Registration Area ================= -->
 
-  <!-- ================ Start Blog Post Area ================= -->
-  <!-- <section class="blog-post-area section-gap">
-    <div class="container-fluid">
-      <div class="feature-inner row">
-        <div class="col-lg-12">
-          <div class="section-title text-left">
-            <h2>
-              Features That <br />
-              Can Avail By Everyone
-            </h2>
-            <p>
-              There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.
-              It’s exciting to think about setting up your own viewing station.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-blog-post">
-            <img src="img/blog-post/b1.jpg" class="img-fluid" alt="" />
-            <div class="overlay"></div>
-            <div class="top-text">
-              <p>29th, oct, 2018</p>
-              <p>121 likes</p>
-              <p>05 comments</p>
-            </div>
-            <div class="text">
-              <h4 class="text-white">Smart Kitchen Setup</h4>
-              <div>
-                <p>
-                  Lorem ipsum dolor sit amet consec tetur adipisicing elit,
-                  sed do.
-                </p>
-              </div>
-              <a href="#" class="primary-btn">
-                View Details
-                <i class="fa fa-long-arrow-right"></i>
-              </a>
+  <!-- ================ Start Feature Area ================= -->
+  <!-- <section class="other-feature-area">
+      <div class="container">
+        <div class="feature-inner row">
+          <div class="col-lg-12">
+            <div class="section-title text-left">
+              <h2>
+                Features That <br />
+                Can Avail By Everyone
+              </h2>
+              <p>
+                If you are looking at blank cassettes on the web, you may be
+                very confused at the difference in price. You may see some for
+                as low as $.17 each.
+              </p>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mt--160">
-          <div class="single-blog-post">
-            <img src="img/blog-post/b2.jpg" class="img-fluid" alt="" />
-            <div class="overlay"></div>
-            <div class="top-text">
-              <p>29th, oct, 2018</p>
-              <p>121 likes</p>
-              <p>05 comments</p>
-            </div>
-            <div class="text">
-              <h4 class="text-white">Smart Kitchen Setup</h4>
+          <div class="col-lg-4 col-md-6">
+            <div class="other-feature-item">
+              <i class="ti-key"></i>
+              <h4>Lifetime Access</h4>
               <div>
                 <p>
-                  Lorem ipsum dolor sit amet consec tetur adipisicing elit,
-                  sed do.
+                  Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
+                  do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
+                  amet consec tetur adipisicing elit, sed do eiusmod tempor
+                  incididunt labore.
                 </p>
               </div>
-              <a href="#" class="primary-btn">
-                View Details
-                <i class="fa fa-long-arrow-right"></i>
-              </a>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mt--260">
-          <div class="single-blog-post">
-            <img src="img/blog-post/b3.jpg" class="img-fluid" alt="" />
-            <div class="overlay"></div>
-            <div class="top-text">
-              <p>29th, oct, 2018</p>
-              <p>121 likes</p>
-              <p>05 comments</p>
-            </div>
-            <div class="text">
-              <h4 class="text-white">Smart Kitchen Setup</h4>
+          <div class="col-lg-4 col-md-6 mt--160">
+            <div class="other-feature-item">
+              <i class="ti-files"></i>
+              <h4>Source File Included</h4>
               <div>
                 <p>
-                  Lorem ipsum dolor sit amet consec tetur adipisicing elit,
-                  sed do.
+                  Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
+                  do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
+                  amet consec tetur adipisicing elit, sed do eiusmod tempor
+                  incididunt labore.
                 </p>
               </div>
-              <a href="#" class="primary-btn">
-                View Details
-                <i class="fa fa-long-arrow-right"></i>
-              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt--260">
+            <div class="other-feature-item">
+              <i class="ti-medall-alt"></i>
+              <h4>Student Membership</h4>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
+                  do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
+                  amet consec tetur adipisicing elit, sed do eiusmod tempor
+                  incididunt labore.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="other-feature-item">
+              <i class="ti-briefcase"></i>
+              <h4>35000+ Courses</h4>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
+                  do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
+                  amet consec tetur adipisicing elit, sed do eiusmod tempor
+                  incididunt labore.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt--160">
+            <div class="other-feature-item">
+              <i class="ti-crown"></i>
+              <h4>Expert Mentors</h4>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
+                  do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
+                  amet consec tetur adipisicing elit, sed do eiusmod tempor
+                  incididunt labore.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt--260">
+            <div class="other-feature-item">
+              <i class="ti-headphone-alt"></i>
+              <h4>Live Supports</h4>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
+                  do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
+                  amet consec tetur adipisicing elit, sed do eiusmod tempor
+                  incididunt labore.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section> -->
-  <!-- ================ End Blog Post Area ================= -->
+    </section> -->
+    <!-- ================ End Feature Area ================= -->
 
   <!-- ================ start footer Area ================= -->
   <footer class="footer-area section-gap">
@@ -683,7 +506,7 @@
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Links rápidos</h4>
+					<h4>Quick Links</h4>
 					<ul>
 						<li><a href="#">Jobs</a></li>
 						<li><a href="#">Brand Assets</a></li>
@@ -730,7 +553,7 @@
 			<div class="footer-bottom row align-items-center">
 				<p class="footer-text m-0 col-lg-8 col-md-12">
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 				<div class="col-lg-4 col-md-12 footer-social">
 					<a href="#"><i class="fa fa-facebook"></i></a>
