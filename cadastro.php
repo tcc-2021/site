@@ -374,7 +374,7 @@ unset($_SESSION['status_cadastro']);
                 <input type="password" class="form-control" id="senha" name="senha" placeholder="senha" onfocus="this.placeholder = ''"
                  onblur="this.placeholder = 'senha'">
               </div>
-              <a>já tem uma conta? faça login clicando </a><a href="entre.php">aqui</a>
+              <a align='text-center'>já tem uma conta? faça login clicando </a><a href="entre.php">aqui</a>
               <div class="col-lg-12 text-center">
                 <button class="btn text-uppercase">Enviar</button>
               </div>

@@ -370,7 +370,7 @@ unset($_SESSION['nao_autenticado']);
                 <input type="password" class="form-control" id="senha" name="senha" placeholder="senha" onfocus="this.placeholder = ''"
                  onblur="this.placeholder = 'senha'">
               </div>
-              <a>Não tem uma conta ainda? cadastre-se clicando </a><a href="cadastro.php">aqui</a>
+              <a align='text-center'>Não tem uma conta ainda? cadastre-se clicando </a><a href="cadastro.php">aqui</a>
               <div class="col-lg-12 text-center">
                 <button class="btn text-uppercase">Entrar</button>
               </div>
