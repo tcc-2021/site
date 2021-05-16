@@ -29,7 +29,7 @@ if($conexao->query($sql) === TRUE) {
 
 $conexao->close();
 
-header('Location: index.php');
+header('Location: perguntas.php');
 exit();
 
 ?>
