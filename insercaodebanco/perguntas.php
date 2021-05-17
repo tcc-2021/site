@@ -58,7 +58,7 @@ session_start()
                             </div>
                             <div class="field">
                                 <div class="control">
-                                    <input name="pergunta" type="text" class="input is-large" placeholder="pergunta">
+                                    <textarea rows="10" cols="50" name="pergunta" type="text" class="input is-large" placeholder="pergunta"></textarea>
                                 </div>
                             </div>
                             <div class="field">
