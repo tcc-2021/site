@@ -659,7 +659,7 @@ th {
       .section-title p br {
         display: none; } }
 
-.gradient-bg, .registration-area .course-form-section .btn, .course-details-left .course-list li .btn:hover, .right-contents .btn.enroll, .contact-page-area .form-area .btn, .top-category-widget-area .single-cat-widget:hover .overlay-bg, .post-content-area .single-post .primary-btn:hover, .blog-pagination .page-item.active .page-link, .blog-pagination .page-link:hover, .widget-wrap .newsletter-widget .bbtns, .comment-form .btn, .footer-area .single-footer-widget .click-btn, .footer-area .footer-bottom .footer-social a:hover {
+.gradient-bg, .registration-area .course-form-section .btn, .course-details-left .course-list li .btn:hover, .right-contents .btn.enroll, .contact-page-area .form-area .btn, .top-category-widget-area .single-cat-widget:hover .overlay-bg, .post-content-area .single-post .download-btn:hover, .blog-pagination .page-item.active .page-link, .blog-pagination .page-link:hover, .widget-wrap .newsletter-widget .bbtns, .comment-form .btn, .footer-area .single-footer-widget .click-btn, .footer-area .footer-bottom .footer-social a:hover {
   background: -webkit-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
   background: -moz-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
   background: -o-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
@@ -677,10 +677,9 @@ th {
   background: -moz-linear-gradient(0deg, #3ea7ff 0%, #42d1ff 100%);
   background: -webkit-linear-gradient(0deg, #3ea7ff 0%, #42d1ff 100%);
   background: -ms-linear-gradient(0deg, #3ea7ff 0%, #42d1ff 100%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-.primary-btn {
+.download-btn {
   background: transparent;
   color: #fff;
   font-size: 12px;
@@ -693,14 +692,14 @@ th {
   cursor: pointer;
   text-transform: capitalize;
   letter-spacing: 1px; }
-  .primary-btn i {
+  .download-btn i {
     -webkit-transform: scaleX(3);
     -moz-transform: scaleX(3);
     -ms-transform: scaleX(3);
     -o-transform: scaleX(3);
     transform: scaleX(3);
     margin-left: 19px; }
-  .primary-btn:hover {
+  .download-btn:hover {
     color: #7c32ff; }
 
 .overlay {
@@ -1635,10 +1634,10 @@ th {
   padding: 130px 0px; }
   .blog-home-banner h1 span {
     color: #7c32ff; }
-  .blog-home-banner .primary-btn {
+  .blog-home-banner .download-btn {
     color: #fff;
     background: #7c32ff; }
-    .blog-home-banner .primary-btn:hover {
+    .blog-home-banner .download-btn:hover {
       color: #7c32ff;
       background: #fff; }
   .blog-home-banner .overlay-bg {
@@ -1749,7 +1748,7 @@ th {
     margin: 20px 0px; }
   .post-content-area .single-post .excert {
     margin-bottom: 20px; }
-  .post-content-area .single-post .primary-btn {
+  .post-content-area .single-post .download-btn {
     background: #7c32ff;
     color: #222222 !important;
     -webkit-transition: all 0.3s ease 0s;
@@ -1759,7 +1758,7 @@ th {
     border-radius: 0px !important;
     box-shadow: none !important;
     font-weight: 600; }
-    .post-content-area .single-post .primary-btn:hover {
+    .post-content-area .single-post .download-btn:hover {
       color: #fff !important; }
 
 .view-more-btn {
@@ -2332,19 +2331,19 @@ h6 {
       color: #222222;
       background: #f9f9ff;
       border: 1px solid transparent; }
-  .genric-btn.primary {
+  .genric-btn.download {
     color: #fff;
     background: #7c32ff;
     border: 1px solid transparent; }
-    .genric-btn.primary:hover {
+    .genric-btn.download:hover {
       color: #7c32ff;
       border: 1px solid #7c32ff;
       background: #fff; }
-  .genric-btn.primary-border {
+  .genric-btn.download-border {
     color: #7c32ff;
     border: 1px solid #7c32ff;
     background: #fff; }
-    .genric-btn.primary-border:hover {
+    .genric-btn.download-border:hover {
       color: #fff;
       background: #7c32ff;
       border: 1px solid transparent; }
@@ -2598,7 +2597,7 @@ h6 {
   .single-textarea:focus {
     outline: none; }
 
-.single-input-primary {
+.single-input.download {
   display: block;
   width: 100%;
   line-height: 40px;
@@ -2606,7 +2605,7 @@ h6 {
   outline: none;
   background: #f9f9ff;
   padding: 0 20px; }
-  .single-input-primary:focus {
+  .single-input.download:focus {
     outline: none;
     border: 1px solid #7c32ff; }
 
@@ -2668,14 +2667,14 @@ h6 {
     .default-switch input:checked + label {
       left: 19px; }
 
-.primary-switch {
+.download-switch {
   width: 35px;
   height: 17px;
   border-radius: 8.5px;
   background: #f9f9ff;
   position: relative;
   cursor: pointer; }
-  .primary-switch input {
+  .download-switch input {
     position: absolute;
     left: 0;
     top: 0;
@@ -2684,7 +2683,7 @@ h6 {
     width: 100%;
     height: 100%;
     opacity: 0; }
-    .primary-switch input + label {
+    .download-switch input + label {
       position: absolute;
       left: 0;
       top: 0;
@@ -2692,7 +2691,7 @@ h6 {
       bottom: 0;
       width: 100%;
       height: 100%; }
-      .primary-switch input + label:before {
+      .download-switch input + label:before {
         content: "";
         position: absolute;
         left: 0;
@@ -2708,7 +2707,7 @@ h6 {
         -moz-transition: all 0.2s;
         -o-transition: all 0.2s;
         transition: all 0.2s; }
-      .primary-switch input + label:after {
+      .download-switch input + label:after {
         content: "";
         position: absolute;
         top: 1px;
@@ -2723,9 +2722,9 @@ h6 {
         transition: all 0.2s;
         box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
         cursor: pointer; }
-    .primary-switch input:checked + label:after {
+    .download-switch input:checked + label:after {
       left: 19px; }
-    .primary-switch input:checked + label:before {
+    .download-switch input:checked + label:before {
       background: #7c32ff; }
 
 .confirm-switch {
@@ -2788,14 +2787,14 @@ h6 {
     .confirm-switch input:checked + label:before {
       background: #4cd3e3; }
 
-.primary-checkbox {
+.download-checkbox {
   width: 16px;
   height: 16px;
   border-radius: 3px;
   background: #f9f9ff;
   position: relative;
   cursor: pointer; }
-  .primary-checkbox input {
+  .download-checkbox input {
     position: absolute;
     left: 0;
     top: 0;
@@ -2804,7 +2803,7 @@ h6 {
     width: 100%;
     height: 100%;
     opacity: 0; }
-    .primary-checkbox input + label {
+    .download-checkbox input + label {
       position: absolute;
       left: 0;
       top: 0;
@@ -2815,8 +2814,8 @@ h6 {
       border-radius: 3px;
       cursor: pointer;
       border: 1px solid #f1f1f1; }
-    .primary-checkbox input:checked + label {
-      background: url(../img/elements/primary-check.png) no-repeat center center/cover;
+    .download-checkbox input:checked + label {
+      background: url(../img/elements.download-check.png) no-repeat center center/cover;
       border: none; }
 
 .confirm-checkbox {
@@ -2884,14 +2883,14 @@ h6 {
       background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
       border: none; }
 
-.primary-radio {
+.download-radio {
   width: 16px;
   height: 16px;
   border-radius: 8px;
   background: #f9f9ff;
   position: relative;
   cursor: pointer; }
-  .primary-radio input {
+  .download-radio input {
     position: absolute;
     left: 0;
     top: 0;
@@ -2900,7 +2899,7 @@ h6 {
     width: 100%;
     height: 100%;
     opacity: 0; }
-    .primary-radio input + label {
+    .download-radio input + label {
       position: absolute;
       left: 0;
       top: 0;
@@ -2911,8 +2910,8 @@ h6 {
       border-radius: 8px;
       cursor: pointer;
       border: 1px solid #f1f1f1; }
-    .primary-radio input:checked + label {
-      background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
+    .download-radio input:checked + label {
+      background: url(../img/elements.download-radio.png) no-repeat center center/cover;
       border: none; }
 
 .confirm-radio {
@@ -3060,7 +3059,7 @@ h6 {
 
 .footer-area {
   padding: 339px 0px 120px;
-  background: url(../img/footer-bg.png) no-repeat center; }
+  background: url(../img/footer-bg.png); }
   @media (max-width: 991px) {
     .footer-area {
       background: #222222;

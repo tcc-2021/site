@@ -54,44 +54,8 @@ session_start()
             <li><a href="index.php">Home</a></li>
             <li><a href="about.html">Sobre nós</a></li>
             <li><a href="cadastro.php">cadastre-se</a></li>
-            <!-- Dropdown -->
-            <!-- <li class="dropdown">
-              <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                Pages
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="elements.html">Elements</a>
-                <a class="dropdown-item" href="course-details.html">Course Details</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                Blog
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="blog-home.html">Blog Home</a>
-                <a class="dropdown-item" href="blog-single.html">Blog Details</a>
-              </div>
-            </li> -->
             <li><a href="entre.php">Entre</a></li>
-            <li><a href="cadastro.html">Download</a></li>
-              <!-- <button class="search">
-                <span class="lnr lnr-magnifier" id="search"></span>
-              </button> -->
-            <!-- </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="search-input" id="search-input-box">
-      <div class="container">
-        <form class="d-flex justify-content-between">
-          <input type="text" class="form-control" id="search-input" placeholder="Search Here" />
-          <button type="submit" class="btn"></button>
-          <span class="lnr lnr-cross" id="close-search" title="Close Search"></span>
-        </form>
-      </div>
-    </div> -->
+            <li><a href="download.html">Download</a></li>   
   </header>
   <!-- ================ End Header Area ================= -->
 
@@ -677,7 +641,7 @@ session_start()
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Links rápidos</h4>
+					<h4>Links rápidolas</h4>
 					<ul>
 						<li><a href="#">Managed Website</a></li>
 						<li><a href="#">Manage Reputation</a></li>

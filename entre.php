@@ -59,45 +59,8 @@ session_start()
             <li><a href="index.php">Home</a></li>
             <li><a href="about.html">Sobre Nós</a></li>
             <li><a href="cadastro.php">Cadastre-se</a></li>
-            <!-- Dropdown -->
-            <!-- <li class="dropdown">
-              <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                Pages
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="elements.html">Elements</a>
-                <a class="dropdown-item" href="course-details.html">Course Details</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                Blog
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="blog-home.html">Blog Home</a>
-                <a class="dropdown-item" href="blog-single.html">Blog Details</a>
-              </div>
-            </li> -->
             <li><a href="entre.php">Entre</a></li>
-            <li><a href="cadastro.html">Download</a></li>
-            <!-- <li>
-              <button class="search">
-                <span class="lnr lnr-magnifier" id="search"></span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="search-input" id="search-input-box">
-      <div class="container">
-        <form class="d-flex justify-content-between">
-          <input type="text" class="form-control" id="search-input" placeholder="Search Here" />
-          <button type="submit" class="btn"></button>
-          <span class="lnr lnr-cross" id="close-search" title="Close Search"></span>
-        </form>
-      </div>
-    </div> -->
+            <li><a href="download.html">Download</a></li>
   </header>
   <!-- ================ End Header Area ================= -->
 
@@ -370,7 +333,7 @@ unset($_SESSION['nao_autenticado']);
                 <input type="password" class="form-control" id="senha" name="senha" placeholder="senha" onfocus="this.placeholder = ''"
                  onblur="this.placeholder = 'senha'">
               </div>
-              <a align='text-center'>Não tem uma conta ainda? cadastre-se clicando </a><a href="cadastro.php">aqui</a>
+              <a>Não tem conta? cadastre-se clicando </a><a href="cadastro.php">aqui</a>
               <div class="col-lg-12 text-center">
                 <button class="btn text-uppercase">Entrar</button>
               </div>
