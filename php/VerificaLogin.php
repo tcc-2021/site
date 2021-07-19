@@ -1,8 +1,5 @@
-//usar o include desse código quando a parte pós login ficar pronta
-
 <?php
-session_start()
-if (!$_SESSION['usuario']) {
+if (!$_SESSION['email']) {
 	header('Location: ../entre.php');
 	exit();
 }

@@ -18,7 +18,7 @@ $row = mysqli_num_rows($result);
 
 if($row == 1){
 	$_SESSION['email'] = $email;
-	header('Location: ../index.php');
+	header('Location: ../principal/index.php');
 	exit();
 }else{
 	$_SESSION['nao_autenticado'] = true;
